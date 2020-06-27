@@ -1,0 +1,40 @@
+.block {
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.block--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block__ico {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.block__ico--1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+}
+
+.block__ico--2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
